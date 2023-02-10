@@ -20,6 +20,9 @@ public class SeleniumTest {
   
   @Test(priority=1)
   public void Test1() {
+	  automationTestingOnlineLandingPage = new AutomationTestingOnlineLandingPage(driver);
+	  shadyMeadowsFormPage = new ShadyMeadowsFormPage(driver);
+	  
 	  driver.get("https://automationintesting.online/");
 	  automationTestingOnlineLandingPage.clickLetMeHackButton();
 	  
